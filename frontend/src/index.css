@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Outfit:wght@100..900&family=Poppins&family=Roboto+Condensed:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a hr {
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity 0.9s ease-in-out, transform 0.3s ease;
+}
+
+a.active hr {
+  display: block;
+  opacity: 1;
+  transform: scaleX(1);
+}
+@media (min-width: 1024px) {
+  .lg\:px-\[4vw\] {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+}
